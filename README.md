@@ -21,3 +21,8 @@ openssl req -new -x509 -sha256 -days 3650 -key ca-key.pem -out ca.pem
 openssl x509 -in ca.pem -text
 ```
 
+### Step 4: Generate rsa certificate key 
+
+```code
+openssl genrsa -out cert-key.pem 4096
+```
